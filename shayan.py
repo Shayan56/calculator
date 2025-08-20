@@ -1,39 +1,15 @@
-Python 3.11.5 (v3.11.5:cce6ba91b3, Aug 24 2023, 10:50:31) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
-Type "help", "copyright", "credits" or "license()" for more information.
->>> import unittest
-... class Calculator:
-...     def add(self, x, y):
-...         return x + y
-...     
-...     def subtract(self, x, y):
-...         return x - y
-...     
-...     def multiply(self, x, y):
-...         return x * y
-...     
-...     def divide(self, x, y):
-...         if y == 0:
-...             raise ValueError("Division by zero is not allowed")
-...         return x / y
-... 
-... class CalculatorTest(unittest.TestCase):
-... 
-...     def setUp(self):
-...         self.calc = Calculator()
-... 
-...     def test_add(self):
-...         self.assertEqual(10, self.calc.add(3, 7), "The addition is wrong")
-... 
-...     def test_subtract(self):
-...         self.assertEqual(12, self.calc.subtract(15, 3), "Subtraction is wrong")
-... 
-...     def test_multiply(self):
-...         self.assertEqual(30, self.calc.multiply(5, 6), "Multiplication is wrong")
-... 
-...     def test_divide(self):
-...         self.assertEqual(3, self.calc.divide(6, 2), "Division is wrong")
-... 
-... if __name__ == '__main__':
-...     unittest.main()
-... 
-print("shayan")
+# shayan.py
+class Calculator:
+    def add(self, x, y):
+        return x + y
+
+    def subtract(self, x, y):
+        return x - y
+
+    def multiply(self, x, y):
+        return x * y
+
+    def divide(self, x, y):
+        if y == 0:
+            raise ValueError("Division by zero is not allowed")
+        return x / y
