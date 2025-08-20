@@ -1,6 +1,6 @@
 # test_calculator.py
 import unittest
-from shayan import Calculator   # import your Calculator class
+from shayan import Calculator
 
 class CalculatorTest(unittest.TestCase):
 
@@ -19,5 +19,9 @@ class CalculatorTest(unittest.TestCase):
     def test_divide(self):
         self.assertEqual(3, self.calc.divide(6, 2))
 
-if __name__ == '__main__':
+    def test_divide_by_zero(self):
+        with self.assertRaises(ValueError):
+            self.calc.divide(10, 0)
+
+if __name__ == "__main__":
     unittest.main()
